@@ -6,7 +6,7 @@ const server = jsonServer.create();
 const { setupAPI } = require('./api-server');
 const { join } = require('path');
 
-const PORT = process.env['PORT'] || 3000;
+const PORT = process.env['PORT'] || 1234;
 
 const app = e();
 
@@ -24,5 +24,5 @@ app.use(bundler.middleware());
 
 // Listen on port PORT
 app.listen(PORT, () => {
-    console.log(`Serving on http://localhost:${PORT}`)
+  console.log(`Serving on http://localhost:${PORT}`);
 });
