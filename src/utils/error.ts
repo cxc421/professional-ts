@@ -24,7 +24,7 @@ export function stringifyError(
     err instanceof Error
       ? stringifyErrorValue(err)
       : err
-      ? '' + err
+      ? `${err}`
       : '(missing error information)'
   }`;
 }
